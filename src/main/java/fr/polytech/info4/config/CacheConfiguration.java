@@ -48,6 +48,11 @@ public class CacheConfiguration {
             createCache(cm, fr.polytech.info4.domain.User.class.getName());
             createCache(cm, fr.polytech.info4.domain.Authority.class.getName());
             createCache(cm, fr.polytech.info4.domain.User.class.getName() + ".authorities");
+            createCache(cm, fr.polytech.info4.domain.Blog.class.getName());
+            createCache(cm, fr.polytech.info4.domain.Post.class.getName());
+            createCache(cm, fr.polytech.info4.domain.Post.class.getName() + ".tags");
+            createCache(cm, fr.polytech.info4.domain.Tag.class.getName());
+            createCache(cm, fr.polytech.info4.domain.Tag.class.getName() + ".entries");
             // jhipster-needle-ehcache-add-entry
         };
     }
